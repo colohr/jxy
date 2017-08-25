@@ -1,0 +1,22 @@
+{
+  "name": "jxy",
+  "version": "0.0.1",
+  "description": "A jangy tool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colohr/jxy.git"
+  },
+  "keywords": [
+    "Documentation"
+  ],
+  "author": "colohr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colohr/jxy/issues"
+  },
+  "homepage": "https://github.com/colohr/jxy#readme"
+}
