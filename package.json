@@ -10,9 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/colohr/jxy.git"
   },
-  "keywords": [
-    "Documentation"
-  ],
+  "keywords": [],
   "author": "colohr",
   "license": "ISC",
   "bugs": {
