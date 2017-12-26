@@ -1,0 +1,309 @@
+/*
+-----------------------------
+Legend:
+	🎨 color
+	◯ version or base
+	# number
+
+	name		-> description
+	-----------------------------
+	🎨-bright	-> more saturation
+	🎨-dim 		-> desaturated
+	🎨-less 	-> least saturation
+	🎨-bold 	-> more saturation dark
+
+	🎨-white 	-> lighter version
+	🎨-light 	-> light version
+	🎨 			-> base color
+	🎨-dark 	-> dark version
+	🎨-black 	-> darker version
+
+	🎨-◯-50 	-> 50% transparency
+	🎨-◯-# 		-> #% transparency
+
+-----------------------------
+*/
+
+
+:root, html {
+
+	--silver-light:whitesmoke;
+	--silver-bright:rgb(245, 255, 250);
+	--silver:lightgray;
+	--silver-dark:silver;
+
+	--clean-bright:rgb(230, 230, 230);
+	--clean:rgba(237, 239, 241,1);
+	--clean-50:rgba(237, 239, 241,0.7);
+
+	--platinum-light:rgb(236,238,241);
+	--platinum:rgb(224,225,226);
+	--platinum-black:rgb(158,166,175);
+
+	--day: ghostwhite;
+	--day-50:rgba(255, 255, 255,0.7);
+
+	--gray: #ddd;
+	--gray-50: rgba(211,211,211,0.39);
+	--gray-dark: #5f646e;
+
+	--dusk: lightslategray;
+
+	--night-light: #3c4450;
+	--night: #383e51;
+	--night-black: #292b37;
+
+	--black-bright:rgb(41, 42, 43);
+
+	--dark-light: rgb(67, 72, 86);
+	--dark-bright: rgb(69, 76, 90);
+	--dark: #3b3e46;
+	--dark-50: rgba(59, 62, 70, 0.76);
+
+	--chocolate:rgb(89, 73, 81);
+	--chocolate-bright-50: rgba(108, 90, 100,0.96);
+	--chocolate-bright: rgb(108, 90, 100);
+	--chocolate-light: rgb(145, 107, 110);
+	--chocolate-dark: rgb(73, 57, 65);
+
+	--cream-light: rgb(253, 245, 230);
+	--cream-bright:rgb(250, 235, 215);
+	--cream: #f0dcc7;
+	--cream-dark: #cebaa6;
+	--cream-bold:#cab49e;
+	--cream-black: #b7a391;
+
+	--sand-light: rgb(253, 254, 243);
+	--sand:rgba(253, 238, 217,1);
+
+	--sugar: #fffef2;
+	--sugar-dark: #f3e3dc;
+
+	--rose-light: rgb(250, 240, 230);
+	--rose-bright:mistyrose;
+	--rose:rgb(220,195,190);
+	--rose-dark:rosybrown;
+	--rose-50:rgba(220,195,190,0.4);
+
+	--pink-light: rgb(255, 237, 253);
+	--pink-bright: rgb(238, 221, 232);
+	--pink: rgb(245, 224, 245);
+	--pink-dark:rgb(216, 191, 216);
+
+	--marine-bright:rgba(42,51,66,1);
+	--marine:rgba(39,47,61,1);
+	--marine-dark:rgba(42,48,61,1);
+
+	--navy-bright: rgb(4, 88, 150);
+	--navy: rgb(4, 64, 120);
+	--navy-dark: rgb(9, 47, 87);
+
+	--water-light: #75c8ee;
+	--water-bright: #3f98d6;
+	--water: #367fb4;
+	--water-dark: #2e5c89;
+	--water-black: #214d70;
+
+	--azul-bright: #1f91e1;
+	--azul: rgb(0, 133, 255);
+	--azul-dark: #1E6DAF;
+	--azul-dark-50: rgba(31, 91, 154, 0.85);
+
+	--pacific-bright:#498bff;
+	--pacific: rgba(30, 144, 255, 1);
+	--pacific-dark: rgb(29, 98, 240);
+	--pacific-black: rgb(27, 83, 187);
+	--pacific-50: rgba(30, 144, 255, 0.51);
+
+	--saphire-dark: rgba(34, 117, 239, 1);
+	--saphire: rgba(0, 123, 255, 1);
+	--saphire-dark: #0056b3;
+
+	--cyan-light: rgb(88, 225, 253);
+	--cyan-bright:rgba(26, 214, 253, 1);
+	--cyan: rgb(26, 198, 237);
+	--cyan-dark: rgb(26, 163, 199);
+
+
+
+	--teal-bright:#2abfce;
+	--teal: #22a6b5;
+	--teal-dark:#2d9097;
+	--teal-black: #205364;
+
+	--aqua-light: rgb(123, 249, 226);
+	--aqua-bright:rgb(25, 249, 216);
+	--aqua: rgb(25, 228, 196);
+	--aqua-dark: rgb(24, 176, 146);
+
+	--turquoise-bright: #2cccaa;
+	--turquoise:rgb(0, 207, 181);
+
+	--sea-bright: rgb(26, 193, 194);
+	--sea: #00aba4;
+	--sea-black: #0b4342;
+	--sea-50: rgba(0, 171, 164, 0.47);
+
+	--mint-white: #d8fbec;
+	--mint-light: #aafbd3;
+	--mint-bright: #63f8ad;
+	--mint: #3eee9a;
+	--mint-dark: #34b069;
+	--mint-50: rgba(40, 156, 103, 0.31);
+	--mint-10: rgba(40, 156, 103, 0.11);
+
+	--forest-light: rgb(96, 121, 112);
+	--forest-bright: rgb(69, 94, 82);
+	--forest: #2a3d35;
+	--forest-dark: #5a6d67;
+	--forest-50: rgba(54, 84, 71, 0.36);
+
+	--emerald-light: #5BCC8B;
+	--emerald-bright: #06E07F;
+	--emerald:rgb(0, 192, 138);
+	--emerald-dark: rgb(0, 174, 120);
+	--emerald-black: rgb(0, 157, 105);
+
+	--grass: rgb(49, 221, 117);
+	--grass-50: rgba(49, 221, 117, 0.53);
+
+	--pea-light:#36d186;
+	--pea:#0eb765;
+	--pea-dark:#3F8954;
+
+	--leaf: rgb(97, 209, 87);
+	--leaf-dark: rgb(79, 157, 79);
+
+	--lime-bright: #99e719;
+	--lime: #7ED321;
+	--lime-dark: #69a717;
+
+	--lima: #94c66e;
+
+	--dew-less: #94a865;
+	--dew-bright: rgba(194, 235, 90, 1);
+	--dew-dim: rgba(165, 200, 73, 1);
+	--dew:rgba(169, 211, 0, 1);
+	--dew-dark: rgba(126, 167, 0, 1);
+	--dew-50:rgba(169, 211, 0, 0.91);
+	--dew-dark-50: rgba(126, 167, 0, 0.81);
+
+	--squash: #ffe272;
+
+	--cantaloupe: rgb(255, 184, 108);
+
+	--gold-bright:#E6BB46;
+	--gold: #ffb72e;
+	--gold-dark: #e4a228;
+	--gold-50:rgba(255, 213, 27, 0.87);
+
+	--sun-bright: #ece735;
+	--sun:rgba(255, 205, 2, 1);
+
+	--tangerine-bright:rgb(255, 149, 0);
+	--tangerine: #ff7300;
+
+	--orange-bright: #ff8d38;
+	--orange: rgb(243, 131, 32);
+
+	--mandarine:rgba(255, 94, 58, 1);
+
+	--karrot: #ff5e4c;
+
+	--tomato-light:#DF7065;
+	--tomato-bright:rgb(255, 82, 82);
+	--tomato: #de4747;
+	--tomato-dark: #dc3b3b;
+
+	--apple-light:rgb(254,98,103);
+	--apple:rgb(239,24,56);
+
+	--watermelon-light: #ff5074;
+	--watermelon: #fb4062;
+
+	--cherry: rgb(255, 42, 104);
+
+	--lily-dark:rgb(255, 117, 181);
+
+	--bubblegum-light: rgb(255, 77, 197);
+	--bubblegum-bright:#ff28a9;
+	--bubblegum: rgb(255, 24, 190);
+	--bubblegum-dark: rgb(225, 0, 152);
+
+	--fuchsia-light:rgb(198, 67, 252);
+	--fuchsia-bright:rgb(182, 24, 248);
+	--fuchsia: #a240fb;
+	--fuchsia-dark: #9b34e7;
+	--fuchsia-black:rgb(121, 20, 215);
+
+	--violet-bright: rgb(152, 63, 255);
+	--violet:rgb(131, 90, 252);
+	--violet-dark:rgb(54,55,162);
+
+	--indigo-light:#6F53ED;
+	--indigo-bright:#572ADD;
+	--indigo:rgb(85, 65, 236);
+	--indigo-dark: #452a9b;
+
+	--grape-white:rgb(169,185,245);
+	--grape: rgba(110, 100, 250, 1);
+	--grape-dark: #464ba5;
+	--grape-50: rgba(110, 100, 250, 0.53);
+
+
+	--lavender-bright: #8884c5;
+	--lavender: #9181c8;
+	--lavender-dark:#8367ce;
+	--lavender-50: rgba(136, 132, 197, 0.49);
+
+
+
+
+	/*gradients*/
+	--pacific-cyan-bg:linear-gradient(135deg, var(--pacific-dark) 0%, var(--cyan) 100%);
+
+	--tangerine-sun-bg: linear-gradient(135deg, var(--tangerine-bright) 0%, var(--sun) 100%);
+
+	--apple-mandarine-bg: linear-gradient(135deg, var(--apple) 0%, var(--mandarine) 100%);
+
+	--cherry-mandarine-bg: radial-gradient(ellipse at left,  var(--cherry) 0%, var(--cherry) 60%, var(--mandarine) 100%);
+
+	--violet-fuchsia-bg: linear-gradient(135deg, var(--violet) 0%, var(--violet-bright) 49%, var(--fuchsia-light) 100%);
+
+	--fuchsia-bg: radial-gradient(ellipse at right, var(--fuchsia-bright) 0%, var(--fuchsia-black) 100%);
+
+	--indigo-bg: radial-gradient(ellipse at top, var(--indigo) 0%, var(--indigo-bright) 40%, var(--fuchsia-black) 70%, var(--fuchsia-dark) 100%);
+
+	--sea-emerald-bg:linear-gradient(135deg, var(--sea-bright) 0%, var(--turquoise) 49%, var(--emerald) 100%);
+
+	--deep-sea-bg:radial-gradient(ellipse at top,  var(--teal-dark) 0%,  var(--teal-black) 44%,  var(--sea-black) 100%);
+
+	--marine-bg:radial-gradient(ellipse at center, var(--marine-bright) 18%,var(--marine) 61%,var(--marine-dark) 100%);
+
+	--cantaloupe-mandarine-bg:radial-gradient(ellipse at bottom,  var(--cantaloupe) 0%, var(--tangerine-bright) 60%, var(--mandarine) 100%);
+
+	--pea-bg:radial-gradient(ellipse at center,  var(--pea-light) 13%, var(--pea) 47%,  var(--pea-dark) 100%);
+
+	--dew-bg:radial-gradient(ellipse at right,  var(--dew-dark) 13%, var(--dew) 47%, var(--dew-bright)    100%);
+
+	--bubblegum-lily-bg: linear-gradient(to top, var(--lily-dark) 0%, var(--bubblegum-bright) 60%, var(--bubblegum) 79%, var(--bubblegum-dark) 100%);
+
+	--tomato-karrot-bg:linear-gradient(215deg,  var(--tomato-light) 0%,  var(--tomato-bright) 45%, var(--tomato) 80%,  var(--karrot) 100%);
+
+	--lima-squash-bg:radial-gradient(ellipse at top,  var(--lima) 0%,  var(--dew-dim) 54%,   var(--squash) 100%);
+
+	--squash-dew-bg:radial-gradient(ellipse at bottom,  var(--dew-dim) 0%,  var(--lima) 54%,   var(--squash) 100%);
+
+	--saphire-pacific-bg:linear-gradient(75deg,  var(--pacific-black) 0%,  var(--saphire-dark) 40%,  var(--saphire) 74%,   var(--pacific-bright) 100%);
+
+	--light-melon-bg: radial-gradient(ellipse at top, var(--watermelon-light) 0%, var(--apple-light) 30%, var(--tomato-light) 70%, var(--cantaloupe) 100%);
+
+	--sand-rose-bg:radial-gradient(ellipse at bottom, var(--pink-bright) 0%, var(--rose) 60%, var(--sand) 100%);
+
+	--chocolate-rose-bg:radial-gradient(ellipse at bottom, var(--chocolate-light) 0%, var(--rose-dark) 73%,var(--cream-black) 100%);
+
+	--soft-bg: radial-gradient(ellipse at top,white 0%,  var(--sugar) 60%, var(--sugar-dark) 100%);
+
+
+
+}

@@ -1,0 +1,12 @@
+:host{
+    --bar-color:white;
+    --text:var(--pacific-dark);
+    --focus-color:var(--pacific-dark);
+    --menu-background-color: var(--bar-color);
+    --menu-item-color: var(--pacific-dark);
+    --menu-item-focus-color: var(--pacific-dark);
+    --anchor-color: var(--pacific-dark);
+}
+[app-drawer] :not([grid]) [action-item]{
+    border-radius: 5px;
+}

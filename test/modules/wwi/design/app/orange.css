@@ -1,0 +1,19 @@
+:host{
+    --drawer-background:var(--tangerine-sun-bg);
+    --text:var(--tangerine);
+    --focus-color:var(--tangerine);
+    --menu-item-color: white;
+    --menu-item-focus-color: var(--tangerine);
+}
+
+
+[app-drawer] [action-item]{
+    border-radius: 100px;
+    font-weight:900;
+    background: var(--tangerine-sun-bg);
+    text-rendering: geometricPrecision;
+}
+[app-drawer] [grid] [action-item]{
+    border-radius: 7px;
+    background: rgba(255,255,255,0.3);
+}

@@ -1,0 +1,29 @@
+:host{
+    display: block;
+    position: relative;
+    height: var(--pages-height,100%);
+    min-height: var(--pages-min-height,100vh);
+    width: var(--pages-width,100vw);
+    opacity: var(--pages-opacity,1);
+    z-index: var(--pages-z,1);
+}
+:host([loading]){
+    pointer-events: none;
+}
+slot#pages::slotted(*){
+    display: none;
+    position: absolute;
+    top:var(--page-top,0);
+    left:var(--page-left,0);
+    right:var(--page-right,0);
+    bottom:var(--page-bottom,0);
+    pointer-events: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: -1;
+}
+slot#pages::slotted([active]){
+    pointer-events: auto;
+    display:block;
+    z-index: 10;
+}

@@ -1,10 +1,16 @@
 {
   "name": "jxy",
-  "version": "0.0.1",
-  "description": "A jangy tool.",
-  "main": "index.js",
+  "version": "0.0.03",
+  "description": "Collection of JavaScript Modules for Web Sites",
+  "main": "package/index.js",
+  "dependencies": {
+    "fxy": "^0.1.71",
+    "wxy": "0.0.502"
+  },
   "scripts": {
-    "test": "node test"
+    "prepublish": "node pre/index.js",
+    "test": "node test",
+    "pre":"node pre/index.js"
   },
   "repository": {
     "type": "git",

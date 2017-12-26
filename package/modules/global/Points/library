@@ -1,0 +1,10 @@
+library = {}
+library.id = 'points-library'
+library.log = true
+library.logic = [
+	'logic/request.js',
+	'logic/utility.js',
+	'logic/Signal.js',
+	'logic/Pointer.js',
+	'logic/index.js'
+]

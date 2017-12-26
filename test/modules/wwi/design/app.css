@@ -1,0 +1,81 @@
+@import "../component/design/app.css";
+@import "action-item.css";
+:host {
+    contain: content;
+    --bar-height: 20px;
+    --menu-sides-offset:14px;
+    display: block;
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 1;
+    color:var(--app-text);
+}
+
+[app-drawer] {
+    visibility: hidden;
+    background: var(--drawer-background,var(--bar-color,var(--grape)));
+}
+:host([role="application"]) [app-drawer] { visibility: visible;  }
+
+[app-drawer-button]{
+    color:var(--text);
+    z-index: 10;
+    background: var(--drawer-background,whitesmoke);
+    height:40px;
+    width: 40px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.5);
+}
+
+[app-drawer-button] content-icon{
+    position: relative;
+    margin:  0 auto;
+    display: block;
+    height:100%;
+    width:100%;
+    border-radius: 100px;
+    overflow: hidden;
+    border:1px solid var(--text);
+    box-sizing: border-box;
+    box-shadow: 0 0 0 1px var(--text),0 1px 6px rgba(0,0,0,0.8);
+    transition:background 200ms ease;
+    will-change:background;
+}
+
+[app-drawer-button]:focus content-icon{
+    background-color:white;
+    box-shadow: 0 0 0 1px var(--text),0 1px 15px rgba(0,0,0,0.8);
+}
+
+[app-drawer] [action-item]{
+    text-align: left;
+    font-size: 18px;
+    --action-background:var(--menu-item-background-color,whitesmoke);
+    --action-color:var(--menu-item-color);
+    --action-focus-color: var(--menu-item-focus-color);
+}
+
+[app-drawer] [action-item]+[action-item]{
+    margin:10px 0 0 0;
+}
+
+[app-drawer] [grid]{
+    padding-bottom:5px;
+}
+
+[app-drawer] [grid] [action-item]{
+    margin:0 0 5px 5px;
+}
+
+[app-drawer] [action-item][slot="footer"]{
+    font-size: 12px;
+    margin-top:3px;
+    margin-bottom:3px;
+    transition:opacity 200ms, box-shadow 200ms;
+    will-change: opacity, box-shadow;
+}
+
+[app-pages] [bg] {  background: var(--day-50);  }
+
+
